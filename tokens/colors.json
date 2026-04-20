@@ -1,0 +1,80 @@
+{
+  "brand": "Brand System Template",
+  "version": "1.0.0",
+  "note": "Paleta de ejemplo. Cambia los hex por los de tu marca manteniendo la estructura.",
+  "colors": {
+    "primary": {
+      "azul-primario": {
+        "hex": "#9BBDDC",
+        "rgb": "155, 189, 220",
+        "usage": "Color principal. Fondos CTA, portadas con texto amarillo, bloques destacados"
+      },
+      "amarillo-acento": {
+        "hex": "#E8C547",
+        "rgb": "232, 197, 71",
+        "usage": "Acento. Palabras clave en hooks"
+      },
+      "negro-tinta": {
+        "hex": "#1A1A1A",
+        "rgb": "26, 26, 26",
+        "usage": "Texto principal sobre fondos claros. NO es negro puro"
+      },
+      "beige-papel": {
+        "hex": "#F5F0E8",
+        "rgb": "245, 240, 232",
+        "usage": "Fondo alternativo tipo cuaderno viejo"
+      },
+      "blanco-roto": {
+        "hex": "#FAF8F3",
+        "rgb": "250, 248, 243",
+        "usage": "Texto sobre azul y fondos oscuros"
+      }
+    },
+    "secondary": {
+      "azul-drip": {
+        "hex": "#6B9BC4",
+        "rgb": "107, 155, 196",
+        "usage": "Version saturada del azul. Drips y subrayados spray"
+      },
+      "amarillo-drip": {
+        "hex": "#D4B53A",
+        "rgb": "212, 181, 58",
+        "usage": "Version saturada del amarillo. Drips"
+      },
+      "washi-tape": {
+        "hex": "#D9CDB5",
+        "rgb": "217, 205, 181",
+        "usage": "Color del celo/washi tape pegando screenshots"
+      },
+      "gris-papel": {
+        "hex": "#A8A39A",
+        "rgb": "168, 163, 154",
+        "usage": "Sombras sutiles sobre papel"
+      }
+    }
+  },
+  "combinations": {
+    "cta-block": {
+      "background": "azul-primario",
+      "keyword": "amarillo-acento",
+      "body-text": "blanco-roto"
+    },
+    "paper-block": {
+      "background": "beige-papel",
+      "body-text": "negro-tinta",
+      "highlight": "azul-primario",
+      "keyword": "amarillo-acento"
+    },
+    "step-header": {
+      "background": "beige-papel",
+      "number-text": "azul-primario",
+      "title-text": "negro-tinta"
+    }
+  },
+  "rules": [
+    "NUNCA usar #000000 (negro puro)",
+    "NUNCA usar #FFFFFF (blanco puro)",
+    "Subrayados en palabras clave siempre con efecto drip paint",
+    "Todos los fondos deben tener textura de papel sutil"
+  ]
+}

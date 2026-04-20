@@ -1,0 +1,179 @@
+/* Brand System Template — Fonts & Tokens
+ *
+ * CSS listo para usar. Importa este archivo en cualquier web/app
+ * y usa las variables CSS para aplicar el sistema tipográfico.
+ *
+ * Fuentes 100% free desde Google Fonts.
+ * Si compras las premium (Bourton, Druk Wide, Domaine), sustituye las variables.
+ */
+
+/* -------------------------------------------------
+ * Google Fonts imports
+ * ------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Caveat:wght@400;700&family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700;1,900&family=Rubik+Mono+One&display=swap');
+
+/* -------------------------------------------------
+ * Design tokens — CSS custom properties
+ * ------------------------------------------------- */
+:root {
+  /* Colors */
+  --color-azul-primario: #9BBDDC;
+  --color-amarillo-acento: #E8C547;
+  --color-negro-tinta: #1A1A1A;
+  --color-beige-papel: #F5F0E8;
+  --color-blanco-roto: #FAF8F3;
+  --color-azul-drip: #6B9BC4;
+  --color-amarillo-drip: #D4B53A;
+  --color-washi-tape: #D9CDB5;
+  --color-gris-papel: #A8A39A;
+
+  /* Font families */
+  --font-display-graffiti: 'Rubik Mono One', sans-serif; /* sustituir por 'Bourton' si tienes licencia */
+  --font-serif-italic: 'Playfair Display', Georgia, serif;
+  --font-sans-condensed: 'Archivo Black', 'Anton', sans-serif; /* sustituir por 'Druk Wide' si tienes licencia */
+  --font-handwritten: 'Caveat', cursive;
+  --font-body: 'Inter', -apple-system, sans-serif;
+
+  /* Typography scale */
+  --size-h1-hero-keyword: 14rem;  /* 224px — palabras clave XXL */
+  --size-h1-hero-standard: 7rem;  /* 112px */
+  --size-h2-script-accent: 5rem;  /* 80px */
+  --size-h3-section: 3rem;        /* 48px */
+  --size-body: 1.75rem;           /* 28px */
+  --size-annotation: 2rem;        /* 32px */
+  --size-caption: 1.5rem;         /* 24px */
+
+  /* Line heights */
+  --lh-hero: 0.9;
+  --lh-heading: 1.1;
+  --lh-body: 1.3;
+}
+
+/* -------------------------------------------------
+ * Utility classes — aplica directamente en HTML
+ * ------------------------------------------------- */
+
+/* Hero palabra clave — XXL amarilla */
+.brand-hero-keyword {
+  font-family: var(--font-sans-condensed);
+  font-size: var(--size-h1-hero-keyword);
+  line-height: var(--lh-hero);
+  color: var(--color-amarillo-acento);
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+
+/* Hero standard — sans bold condensed */
+.brand-hero {
+  font-family: var(--font-sans-condensed);
+  font-size: var(--size-h1-hero-standard);
+  line-height: var(--lh-heading);
+  color: var(--color-negro-tinta);
+  text-transform: uppercase;
+}
+
+/* Accent — serif italic elegante */
+.brand-accent {
+  font-family: var(--font-serif-italic);
+  font-style: italic;
+  font-weight: 700;
+  font-size: var(--size-h2-script-accent);
+  line-height: var(--lh-heading);
+  color: var(--color-blanco-roto);
+}
+
+/* Section heading */
+.brand-section {
+  font-family: var(--font-sans-condensed);
+  font-size: var(--size-h3-section);
+  text-transform: uppercase;
+  color: var(--color-negro-tinta);
+}
+
+/* Annotation — handwritten */
+.brand-annotation {
+  font-family: var(--font-handwritten);
+  font-weight: 700;
+  font-size: var(--size-annotation);
+  line-height: var(--lh-body);
+  color: var(--color-negro-tinta);
+}
+
+/* Body text */
+.brand-body {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: var(--size-body);
+  line-height: var(--lh-body);
+  color: var(--color-negro-tinta);
+}
+
+/* -------------------------------------------------
+ * Backgrounds
+ * ------------------------------------------------- */
+
+.bg-primary {
+  background-color: var(--color-azul-primario);
+  /* Para textura de papel: superponer image en CSS en lugar de aquí */
+}
+
+.bg-paper {
+  background-color: var(--color-beige-papel);
+}
+
+.bg-paper-textured {
+  background-color: var(--color-beige-papel);
+  background-image: url('../assets/texturas/papel-arrugado-beige.png');
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+
+/* -------------------------------------------------
+ * Effects — drip, washi, shadow
+ * ------------------------------------------------- */
+
+/* Drip paint underline (SVG-based, inline recomendado) */
+.drip-underline-blue {
+  position: relative;
+  display: inline-block;
+}
+.drip-underline-blue::after {
+  content: '';
+  position: absolute;
+  left: 0; right: 0; bottom: -0.1em;
+  height: 0.15em;
+  background-color: var(--color-azul-drip);
+  border-radius: 2px;
+  /* Para drip real, sustituir por SVG con goteos */
+}
+
+.drip-underline-yellow::after {
+  background-color: var(--color-amarillo-drip);
+}
+
+/* Washi tape */
+.washi-tape {
+  position: absolute;
+  width: 100px;
+  height: 150px;
+  background-color: var(--color-washi-tape);
+  opacity: 0.92;
+  transform: rotate(8deg);
+  box-shadow: 0 2px 6px rgba(26, 26, 26, 0.1);
+  z-index: 2;
+}
+.washi-tape--left {
+  top: -12px;
+  left: -30px;
+  transform: rotate(-8deg);
+}
+.washi-tape--right {
+  top: -12px;
+  right: -30px;
+  transform: rotate(10deg);
+}
+
+/* Soft shadow para mockups/cards */
+.brand-shadow {
+  box-shadow: 0 4px 14px rgba(26, 26, 26, 0.1);
+}

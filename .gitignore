@@ -1,0 +1,24 @@
+# Sistema
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# Editor
+.vscode/
+.idea/
+
+# Figma locks
+*.fig.lock
+
+# Archivos grandes temporales
+*.psd
+*.ai
+*.sketch
+
+# Fuentes premium sin licencia de redistribución libre
+# (Bourton, Druk Wide, Domaine, etc.)
+# Descomenta si quieres excluirlas del repo público:
+# fonts/**/*.otf
+# fonts/**/*.ttf
+# fonts/**/*.woff2
