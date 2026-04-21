@@ -1,200 +1,147 @@
-# Brand System — Master document
-
-> Plantilla de sistema de marca para creadores de contenido con IA.
-> Este archivo es la fuente de verdad. Claude Design, Lovable, v0, Cursor y cualquier
-> agente de IA deben leer este archivo primero para aplicar la identidad visual y verbal.
+# DESIGN.md — The Coffee Cart
+> Archivo maestro del sistema de marca. Si solo puedes leer un archivo, que sea este.
+> Úsalo como contexto para Claude, v0, Lovable, Cursor o cualquier agente de IA.
 
 ---
 
-## 1. Identidad
+## Identidad de marca
 
-**Marca:** [TU MARCA]
-**Creador:** [TU NOMBRE / @tu-handle]
-**Propuesta:** [Describe en una frase qué haces y para quién]
-**Audiencia:** [A quién va dirigido tu contenido]
-**Tono:** [Adjetivos de tu voz — ej: directo, práctico, anti-hype, humano]
-**Voz:** [Cómo te diriges — singular/plural, tú/usted, tono formal/informal]
+| Campo | Valor |
+|---|---|
+| **Nombre** | The Coffee Cart |
+| **Servicio** | Café de especialidad para eventos |
+| **Estilo** | Elegante · Limpio · Profesional |
+| **Voz** | Dinámica y aspiracional |
+| **Idioma** | Español |
+| **Audiencia** | Empresas, parejas, organizadores de eventos |
 
-> Rellena los campos anteriores antes de pasar este doc a un agente de IA.
-> Sin identidad concreta, el agente inventará una y no será la tuya.
+### Tono de voz
+- Dinámico y aspiracional: habla de elevar experiencias, no solo de vender café
+- Directo y confiado: frases cortas, sin rodeos
+- Cálido pero profesional: nunca frío ni corporativo
+- Ejemplos de framing: "Eleva tu evento", "Cada sorbo importa", "El detalle que marca la diferencia"
 
 ---
 
-## 2. Paleta de colores
+## Paleta de colores
 
-Paleta de ejemplo. Adáptala en `tokens/colors.json`.
-
-### Principales
 | Nombre | Hex | Uso |
-|--------|-----|-----|
-| **Azul primario** | `#9BBDDC` | Color principal. Fondos de CTA, portadas, bloques destacados |
-| **Amarillo acento** | `#E8C547` | Acento. Palabras clave en hooks |
-| **Negro tinta** | `#1A1A1A` | Texto principal sobre fondos claros. NO es negro puro — tiene textura sutil |
-| **Beige papel** | `#F5F0E8` | Fondo alternativo tipo "cuaderno viejo" |
-| **Blanco roto** | `#FAF8F3` | Texto sobre azul y fondos oscuros |
-
-### Secundarios
-| Nombre | Hex | Uso |
-|--------|-----|-----|
-| **Azul drip** | `#6B9BC4` | Version más saturada del azul, para drips y subrayados spray |
-| **Amarillo drip** | `#D4B53A` | Version más saturada del amarillo, para drips |
-| **Washi tape** | `#D9CDB5` | Color del celo/washi tape que aparece pegando screenshots |
-| **Gris papel** | `#A8A39A` | Sombras sutiles sobre papel |
+|---|---|---|
+| **Blanco puro** | `#FFFFFF` | Fondos principales, espacios en blanco |
+| **Crema** | `#F5F2EB` | Fondo alternativo tipo "papel", slides de descanso |
+| **Latte** | `#9E7B65` | Acento cálido, detalles secundarios |
+| **Café** | `#5C3220` | Color principal de marca, bloques destacados |
+| **Negro tinta** | `#0D0D0D` | Textos, logos, bordes |
 
 ### Reglas de uso
-- Fondo **azul primario** → palabra clave en **amarillo acento** + resto en **blanco roto**
-- Fondo **beige papel** → texto en **negro tinta** + destacados en **azul** o **amarillo**
-- NUNCA usar negro puro `#000000`. NUNCA usar blanco puro `#FFFFFF`
-- Subrayados siempre con efecto **drip paint** (ver `tokens/effects.md`)
+- Nunca usar `#000000` ni `#FFFFFF` puros — siempre los tonos de la paleta
+- Combinación principal: fondo Crema `#F5F2EB` + texto Negro tinta `#0D0D0D`
+- Combinación de acento: fondo Café `#5C3220` + texto Blanco `#FFFFFF`
+- El color Latte `#9E7B65` solo como detalle, nunca como fondo de texto largo
 
 ---
 
-## 3. Tipografía
+## Tipografía
 
-Sistema de **4 fuentes** que se combinan en toda pieza:
+| Rol | Fuente | Peso | Uso |
+|---|---|---|---|
+| **Display / Headlines** | Avenir | Black / Heavy | Títulos grandes, palabras clave XXL |
+| **Serif elegante** | Lora | Italic | Subtítulos, citas, frases aspiracionales |
+| **Body** | Avenir | Regular / Medium | Cuerpo de texto, descripciones |
 
-### 1. Display Graffiti (spray/stencil)
-- **Uso:** Palabras clave grandes en portadas y transiciones
-- **Estilo:** Stencil grueso con efecto drip/pintura que gotea
-- **Fuentes recomendadas (premium):** Bourton, Boucherie Block, Rust Bold
-- **Alternativa free:** Rubik Mono One + efecto drip añadido
-
-### 2. Serif Italic Elegante
-- **Uso:** Palabras destacadas en cursiva
-- **Estilo:** Serif alta con contraste, italic refinada
-- **Fuentes recomendadas (premium):** Domaine Display Italic, Cormorant Italic
-- **Alternativa free:** Playfair Display Italic (Google Fonts)
-
-### 3. Sans Bold Condensed
-- **Uso:** Títulos de sección, hooks, CTAs
-- **Estilo:** Sans-serif ultra bold, condensed, impactante
-- **Fuentes recomendadas (premium):** Druk Wide Bold, Bebas Neue Bold
-- **Alternativa free:** Archivo Black o Anton (Google Fonts)
-
-### 4. Handwritten Casual
-- **Uso:** Anotaciones, subtítulos, tips, frases explicativas
-- **Estilo:** Manuscrita natural, ligeramente irregular
-- **Fuentes recomendadas:** Caveat Bold, Kalam, Shadows Into Light
-- **Alternativa free:** Caveat (Google Fonts)
+### Sustitutos Google Fonts (100% free)
+- Avenir → **Nunito** o **DM Sans** (Bold para display)
+- Lora → **Lora** (disponible directamente en Google Fonts)
 
 ### Jerarquía tipográfica
-```
-H1 (hook palabra clave)  → Display Graffiti, 180-240pt, amarillo o azul
-H1-alt (hook normal)     → Sans Bold Condensed, 100-140pt
-H2 (script accent)       → Serif Italic, 80-100pt
-H3 (subtítulo)           → Sans Bold Condensed, 40-56pt
-Body                     → Sans regular (Inter / Manrope), 28-36pt
-Annotation               → Handwritten Casual, 32-40pt
-Caption                  → Handwritten Casual, 24-28pt
-```
+1. **Keyword XXL** — Avenir Black, muy grande, 1-3 palabras máximo
+2. **Headline** — Avenir Heavy, título del slide
+3. **Subheadline** — Lora Italic, frase de apoyo
+4. **Body** — Avenir Regular, texto explicativo
+5. **Label / Tag** — Avenir Medium uppercase, etiquetas pequeñas
 
 ---
 
-## 4. Efectos y texturas (signature)
+## Patrones de marca
 
-Ver detalle completo en `tokens/effects.md`. Resumen:
+Dos patrones disponibles para usar como fondos o bordes decorativos:
 
-1. **Fondo papel arrugado** — textura base presente en ~90% de slides
-2. **Washi tape beige** (`#D9CDB5`) — pegando esquinas de screenshots con rotación sutil (±5deg)
-3. **Spray paint drip** — underline animado/estático en palabras clave
-4. **Flechas manuscritas** — anotaciones negras dibujadas a boli
-5. **Sombra sutil** bajo mockups/cards (no dramática, solo papel sobre papel)
-6. **Grano sutil** en fotos y fondos (aumenta sensación "analógica")
+1. **Patrón C** — La letra "C" de Coffee repetida en tiling. Usar en blanco sobre negro o negro sobre crema. Ideal para bordes de slide o fondo de CTA.
+2. **Patrón granos** — Granos de café en outline repetidos. Más orgánico. Ideal para slides de tips o contexto.
+
+Regla: los patrones siempre en baja opacidad (10–20%) cuando son fondo de texto.
 
 ---
 
-## 5. Estructura canónica de carrusel (10-11 slides)
-
-Fórmula que funciona. Cualquier carrusel nuevo debe seguir esta estructura salvo excepción justificada.
+## Estructura de carrusel (10 slides)
 
 ```
-Slide 1  — HOOK: mezcla de tipografías + talento recortado + palabra clave XXL
-Slide 2  — CONTEXTO: "VETE A / ENTRA EN" + screenshot con washi tape
-Slide 3  — PASO 1 (numerado "PASO 1" grande en graffiti)
-Slide 4  — PASO 2
-Slide 5  — PASO 3
-Slide 6  — PASO 4 (opcional)
-Slide 7  — COMPARATIVA: "MAL SISTEMA" vs "BUEN SISTEMA" (checkmarks)
-Slide 8  — TIP destacado (elemento visual + flecha manuscrita)
-Slide 9  — TRANSICIÓN: texto corto sobre fondo de color (sin screenshots)
-Slide 10 — CTA: "COMENTA 'X'" (fondo color + keyword amarilla) + handle al pie
-Slide 11 — Firma / cierre (opcional)
+1.  Hook / portada        — Palabra clave XXL + propuesta de valor
+2.  Contexto / problema   — ¿Por qué el café importa en tu evento?
+3.  Paso / punto 1        — Primer beneficio o elemento del servicio
+4.  Paso / punto 2        — Segundo beneficio o elemento
+5.  Paso / punto 3        — Tercer beneficio o elemento
+6.  Paso / punto 4        — Cuarto beneficio (opcional)
+7.  Comparativa           — Sin The Coffee Cart vs Con The Coffee Cart
+8.  Tip destacado         — Dato de café de especialidad o consejo
+9.  Transición            — Solo texto sobre color sólido (frase aspiracional)
+10. CTA                   — "¿Listo para elevar tu evento?" + llamada a acción
 ```
 
-Detalle de cada tipo de slide en `patterns/`.
+---
+
+## Tipos de carrusel definidos
+
+### 1. Carrusel de servicio
+**Objetivo:** Mostrar qué ofrecemos y cómo funciona
+**Hook ejemplo:** "Tu evento merece más que café de máquina"
+**Estructura:** Hook → Qué es TCC → Cómo funciona (3 pasos) → Qué incluye → CTA
+
+### 2. Carrusel de testimonio
+**Objetivo:** Mostrar casos reales de eventos
+**Hook ejemplo:** "Así fue el café en [tipo de evento]"
+**Estructura:** Hook → Contexto del evento → Momento destacado → Reacción/resultado → Quote del cliente → CTA
+
+### 3. Carrusel de tips
+**Objetivo:** Educar sobre café de especialidad, posicionarnos como expertos
+**Hook ejemplo:** "3 cosas que no sabías del café de especialidad"
+**Estructura:** Hook → Tip 1 → Tip 2 → Tip 3 → Por qué importa en eventos → CTA
 
 ---
 
-## 6. Formato técnico
+## Voz y copy — Banco de frases
 
-- **Aspect ratio:** 4:5 vertical (1080 × 1350 px) para Instagram feed
-- **Stories / Reels cover:** 9:16 (1080 × 1920 px)
-- **Dots de carrusel:** visibles en la portada (mockup Instagram)
-- **Exportar:** PNG o JPG quality 90 (balance peso/calidad)
+### Headlines de portada
+- "Eleva tu evento con café de especialidad"
+- "El detalle que tus invitados van a recordar"
+- "No es solo café. Es experiencia."
+- "Tu evento merece más"
+- "Café de especialidad. En tu evento."
 
----
+### CTAs
+- "Cotiza tu evento →"
+- "Escríbenos y armamos tu propuesta"
+- "¿Cuándo es tu evento? Hablemos."
+- "DM para disponibilidad"
 
-## 7. Personaje (talent)
-
-**Recomendado:** el creador aparece en la portada (slide 1) del carrusel, recortado sin fondo
-(PNG transparente) y colocado EN FRENTE del texto grande (layering).
-
-Poses sugeridas:
-- Sentado en el suelo con objeto relacionado con el tema — pose relajada
-- Frente al ordenador — pose trabajadora
-- De pie talking head — pose directa
-- Cuclillas — pose casual
-
-> Las fotos del talento no se versionan en este repo (privacidad/tamaño).
-> Mantenlas en un drive/Notion y enlázalas desde el agente de IA.
+### Frases de apoyo (Lora Italic)
+- "Cada sorbo importa"
+- "Donde el buen café hace la diferencia"
+- "Especialidad, en cada taza"
 
 ---
 
-## 8. Voz y copy
+## Instrucciones para agentes de IA
 
-El copy de tus piezas es lo más personal de tu marca y lo que más cuesta automatizar.
-
-Recomendaciones para crear tu propia guía de voz:
-
-- **Transcribe 30-60 reels/posts reales tuyos** y analiza patrones
-- **Identifica tus muletillas** (las frases que repites sin darte cuenta)
-- **Saca una lista de hooks que te funcionan** — cópialos como plantillas
-- **Define tu estructura estándar** (ej: hook → contexto → 3-5 pasos → cierre → CTA)
-- **Anota qué NO hacer** (evitar "Hola", "Hoy vamos a ver", etc.)
-
-> Esta plantilla no incluye guía de voz — es muy personal y se genera a partir del análisis
-> de tu contenido real. Si quieres hacer la tuya, guárdala en una carpeta `voz/` con:
-> `tono.md`, `hooks.md`, `ctas.md`.
+Cuando generes contenido para The Coffee Cart:
+1. Lee este archivo primero
+2. Usa siempre la paleta de colores definida — nunca colores fuera de ella
+3. La tipografía display es Avenir Black (o Nunito Bold como fallback)
+4. El tono es aspiracional y dinámico, nunca pasivo
+5. Los textos van en español
+6. Estructura los carruseles siguiendo los patrones definidos arriba
+7. El nombre siempre como "The Coffee Cart" — nunca abreviado
 
 ---
 
-## 9. Qué NO hacer
-
-- ❌ Negro puro `#000000` o blanco puro `#FFFFFF`
-- ❌ Fuentes limpias tipo SF Pro / Helvetica sin mezcla de estilos
-- ❌ Portadas sin personaje/talento visible
-- ❌ Fondos planos sin textura de papel
-- ❌ Una sola tipografía en portadas (deben ser 3-4 mezcladas)
-- ❌ Tono corporativo, formal o de agencia
-- ❌ Emojis decorativos gratis (solo si suman contexto)
-- ❌ "Haz click en el enlace" tipo gurú de LinkedIn
-
----
-
-## 10. Archivos del sistema
-
-| Archivo | Contenido |
-|---------|-----------|
-| `tokens/colors.json` | Paleta en JSON parseable |
-| `tokens/typography.json` | Fuentes + tamaños + pesos |
-| `tokens/effects.md` | Drip, washi, grano, sombras (con specs CSS) |
-| `tokens/fonts.css` | CSS listo para importar con variables y clases |
-| `patterns/*.md` | Plantillas de cada tipo de slide |
-| `examples/*.html` | Ejemplos HTML/CSS aplicando el sistema |
-| `assets/logos/` | Tus logos vectoriales |
-| `assets/texturas/` | PNGs de papel, spray, washi |
-| `fonts/` | Archivos .woff2 / .ttf |
-
----
-
-*Última actualización: 2026-04-20*
+*Última actualización: Abril 2026*
