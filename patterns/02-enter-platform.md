@@ -1,33 +1,34 @@
-# Pattern 02 — Contexto / "Vete a / Entra en"
+# Pattern 02 — Contexto / "¿Por qué importa el café en tu evento?"
 
-Segundo slide del carrusel. Lleva al usuario a la herramienta o pantalla donde empieza la acción.
+Segundo slide del carrusel. Planta el problema o el contexto que justifica el resto del contenido.
 
 ## Fórmula
 
 ```
-[Fondo]           Beige papel (#F5F0E8) + textura arrugada
-[Headline]        "VETE A" / "ENTRA EN" en graffiti azul arriba-izquierda
-[Screenshot]      Captura de la plataforma con washi tape en las esquinas
-[Etiqueta]        Nombre de la plataforma en serif italic + flecha manuscrita apuntando
-[Subtítulo]       Handwritten en negro explicando qué hacer
+[Fondo]           Crema (#F5F2EB)
+[Headline]        Pregunta o dato de contexto en Avenir Black
+[Visual]          Foto de evento genérico (sin barra de café) con overlay
+[Etiqueta]        Lora Italic señalando el problema o la oportunidad
+[Subtítulo]       Avenir Regular explicando por qué importa
 ```
 
 ## Estructura visual
 
 ```
 ┌─────────────────────────────────┐
-│ [GRAFFITI AZUL]                 │  ← "VETE A" / "ENTRA EN"
+│                                 │
+│  [AVENIR BLACK NEGRO]           │  ← pregunta o dato impactante
+│  [AVENIR BLACK NEGRO]           │
 │                                 │
 │    ┌───────────────┐            │
-│    │  SCREENSHOT   │ ← washi    │
-│    │   [plataforma]│   tape     │
-│    │               │   en       │
-│    │               │   esquinas │
+│    │  FOTO EVENTO  │            │  ← foto con overlay crema o café
+│    │  sin café     │            │
+│    │               │            │
 │    └───────────────┘            │
-│           ↓                     │  ← flecha manuscrita
-│      [PLATAFORMA]               │  ← serif italic (nombre tool)
+│           ↓                     │  ← flecha o separador
+│   [Lora Italic]                 │  ← "el café hace la diferencia"
 │                                 │
-│  [handwritten]                  │  ← "ve a [acción]"
+│  [Avenir Regular pequeño]       │  ← contexto o dato de apoyo
 │                                 │
 └─────────────────────────────────┘
 ```
@@ -35,23 +36,30 @@ Segundo slide del carrusel. Lleva al usuario a la herramienta o pantalla donde e
 ## Specs
 
 | Elemento | Detalle |
-|----------|---------|
+|---|---|
 | Ratio | 4:5 (1080 × 1350 px) |
-| Fondo | Beige papel `#F5F0E8` + papel arrugado |
-| Headline "VETE A" | Display graffiti azul primario, 100-140pt |
-| Screenshot | Ancho 70-80% del slide, centrado. Sombra sutil |
-| Washi tape | 2-3 piezas en esquinas del screenshot, rotación ±8deg |
-| Nombre plataforma | Serif italic negro/azul, 56-80pt |
-| Flecha manuscrita | PNG sticker curvada, apunta de "VETE A" al screenshot |
-| Subtítulo handwritten | Caveat 32-40pt negro |
+| Fondo | Crema `#F5F2EB` |
+| Headline | Avenir Black / Nunito 900, 48-64pt, negro tinta `#0D0D0D` |
+| Foto | 65-75% ancho, centrada, overlay crema `rgba(245,242,235,0.3)` |
+| Lora Italic | 36-44pt, café `#5C3220` |
+| Subtítulo | Avenir Regular 22-28pt, negro tinta |
 
-## Ejemplos de headline
+## Ejemplos de headlines de contexto
 
-- **"ENTRA en [PLATAFORMA]"**
-- **"VETE A [PLATAFORMA]"**
-- **"ABRE [PLATAFORMA]"**
-- **"BÚSCATE [PLATAFORMA]"**
+* **"El café es lo primero que tus invitados piden"**
+* **"Un evento bien servido se recuerda por años"**
+* **"¿Cuántos eventos has ido donde el café era horrible?"**
+* **"El 80% de los eventos usan café de máquina"**
 
-## Prompt para IA
+## Ejemplos de Lora Italic de apoyo
+* *"hay una mejor opción"*
+* *"el detalle que lo cambia todo"*
+* *"eso ya no tiene que pasar en tu evento"*
 
-> Slide vertical 4:5. Fondo beige papel #F5F0E8 con textura arrugada. Arriba a la izquierda, la frase "VETE A" o "ENTRA EN" en tipografía graffiti stencil grande azul #9BBDDC con efecto drip. En el centro un screenshot limpio de [PLATAFORMA] con 2-3 washi tapes beige pegándolo en las esquinas, ligeramente rotados. Debajo, el nombre de la plataforma en serif italic (tipo Playfair) y una flecha curva dibujada a mano apuntando desde el texto al screenshot. Pie de slide con anotación handwritten estilo Caveat explicando la acción siguiente.
+## Prompt para Claude / IA
+
+> Slide vertical 4:5. Fondo crema #F5F2EB. Arriba, un headline impactante en Avenir Black negro tinta 56pt en 2 líneas. En el centro, una foto de evento (boda, corporativo, reunión) sin barra de café visible, con overlay suave crema al 30%. Debajo de la foto, una frase corta en Lora Italic color café #5C3220 44pt. Al pie, texto de apoyo en Avenir Regular 24pt negro tinta. Estilo limpio, elegante, sin elementos decorativos extras.
+
+---
+
+*The Coffee Cart · Brand System 2026*
