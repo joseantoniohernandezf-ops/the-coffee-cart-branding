@@ -1,80 +1,55 @@
 {
-  "brand": "Brand System Template",
+  "brand": "The Coffee Cart",
   "version": "1.0.0",
-  "note": "Paleta de ejemplo. Cambia los hex por los de tu marca manteniendo la estructura.",
   "colors": {
-    "primary": {
-      "azul-primario": {
-        "hex": "#9BBDDC",
-        "rgb": "155, 189, 220",
-        "usage": "Color principal. Fondos CTA, portadas con texto amarillo, bloques destacados"
-      },
-      "amarillo-acento": {
-        "hex": "#E8C547",
-        "rgb": "232, 197, 71",
-        "usage": "Acento. Palabras clave en hooks"
-      },
-      "negro-tinta": {
-        "hex": "#1A1A1A",
-        "rgb": "26, 26, 26",
-        "usage": "Texto principal sobre fondos claros. NO es negro puro"
-      },
-      "beige-papel": {
-        "hex": "#F5F0E8",
-        "rgb": "245, 240, 232",
-        "usage": "Fondo alternativo tipo cuaderno viejo"
-      },
-      "blanco-roto": {
-        "hex": "#FAF8F3",
-        "rgb": "250, 248, 243",
-        "usage": "Texto sobre azul y fondos oscuros"
-      }
+    "white": {
+      "value": "#FFFFFF",
+      "description": "Blanco puro — fondos principales, espacios en blanco"
     },
-    "secondary": {
-      "azul-drip": {
-        "hex": "#6B9BC4",
-        "rgb": "107, 155, 196",
-        "usage": "Version saturada del azul. Drips y subrayados spray"
-      },
-      "amarillo-drip": {
-        "hex": "#D4B53A",
-        "rgb": "212, 181, 58",
-        "usage": "Version saturada del amarillo. Drips"
-      },
-      "washi-tape": {
-        "hex": "#D9CDB5",
-        "rgb": "217, 205, 181",
-        "usage": "Color del celo/washi tape pegando screenshots"
-      },
-      "gris-papel": {
-        "hex": "#A8A39A",
-        "rgb": "168, 163, 154",
-        "usage": "Sombras sutiles sobre papel"
-      }
+    "cream": {
+      "value": "#F5F2EB",
+      "description": "Crema — fondo alternativo tipo papel, slides de descanso"
+    },
+    "latte": {
+      "value": "#9E7B65",
+      "description": "Latte — acento cálido, detalles secundarios. No usar como fondo de texto largo."
+    },
+    "coffee": {
+      "value": "#5C3220",
+      "description": "Café — color principal de marca, bloques destacados, CTAs"
+    },
+    "ink": {
+      "value": "#0D0D0D",
+      "description": "Negro tinta — textos, logos, bordes. Nunca #000000 puro."
     }
   },
   "combinations": {
-    "cta-block": {
-      "background": "azul-primario",
-      "keyword": "amarillo-acento",
-      "body-text": "blanco-roto"
+    "primary": {
+      "background": "#F5F2EB",
+      "text": "#0D0D0D",
+      "description": "Combinación principal — fondo crema con texto tinta"
     },
-    "paper-block": {
-      "background": "beige-papel",
-      "body-text": "negro-tinta",
-      "highlight": "azul-primario",
-      "keyword": "amarillo-acento"
+    "accent": {
+      "background": "#5C3220",
+      "text": "#FFFFFF",
+      "description": "Combinación de acento — fondo café con texto blanco"
     },
-    "step-header": {
-      "background": "beige-papel",
-      "number-text": "azul-primario",
-      "title-text": "negro-tinta"
+    "subtle": {
+      "background": "#FFFFFF",
+      "text": "#0D0D0D",
+      "accent": "#9E7B65",
+      "description": "Combinación limpia — fondo blanco, texto tinta, detalle latte"
+    },
+    "dark": {
+      "background": "#0D0D0D",
+      "text": "#F5F2EB",
+      "description": "Combinación oscura — fondo negro tinta con texto crema"
     }
   },
   "rules": [
-    "NUNCA usar #000000 (negro puro)",
-    "NUNCA usar #FFFFFF (blanco puro)",
-    "Subrayados en palabras clave siempre con efecto drip paint",
-    "Todos los fondos deben tener textura de papel sutil"
+    "Nunca usar #000000 ni #FFFFFF puros — siempre los tonos de la paleta",
+    "El color latte (#9E7B65) solo como detalle, nunca como fondo de texto largo",
+    "Máximo 3 colores por slide para mantener limpieza visual",
+    "En slides de CTA preferir la combinación accent (café + blanco)"
   ]
 }
