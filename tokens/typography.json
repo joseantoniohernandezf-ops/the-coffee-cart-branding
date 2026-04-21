@@ -1,112 +1,78 @@
 {
-  "system": "Mezcla obligatoria de 4 estilos. Portadas siempre combinan 3-4.",
+  "brand": "The Coffee Cart",
+  "version": "1.0.0",
   "fonts": {
-    "display-graffiti": {
-      "role": "Palabras clave grandes en portadas y transiciones",
-      "examples": ["PASO 1", "ENTRA", "AHORA", "VETE A", "DEBES HACER"],
-      "recommended": ["Bourton", "Boucherie Block", "Rust Bold"],
-      "free-alternative": "Rubik Mono One + drip effect",
-      "google-fonts-fallback": "Rubik Mono One",
-      "weight": 900,
-      "characteristics": "Stencil grueso, efecto drip paint en letras",
-      "default-color": "azul-primario o amarillo-acento",
-      "size-range-pt": [120, 240]
+    "display": {
+      "family": "Avenir",
+      "fallback": "Nunito",
+      "googleFonts": "https://fonts.google.com/specimen/Nunito",
+      "weights": ["800", "900"],
+      "style": "normal",
+      "usage": "Títulos grandes, palabras clave XXL, headlines principales",
+      "notes": "Avenir no está en Google Fonts. Usar Nunito ExtraBold/Black como alternativa gratuita idéntica en espíritu."
     },
-    "serif-italic": {
-      "role": "Palabras destacadas en cursiva elegante",
-      "examples": ["Los", "TIP", "Ha llegado", "cómo creo"],
-      "recommended": ["Playfair Display Italic", "Cormorant Italic", "Domaine Display Italic"],
-      "free-alternative": "Playfair Display Italic",
-      "google-fonts-fallback": "Playfair Display Italic",
-      "weight": 700,
+    "serif": {
+      "family": "Lora",
+      "fallback": "Georgia",
+      "googleFonts": "https://fonts.google.com/specimen/Lora",
+      "weights": ["400", "500"],
       "style": "italic",
-      "characteristics": "Serif alta con contraste, italic refinada",
-      "default-color": "blanco-roto (sobre azul) o negro-tinta (sobre papel)",
-      "size-range-pt": [60, 120]
-    },
-    "sans-bold-condensed": {
-      "role": "Titulos de seccion, hooks, CTAs, headings",
-      "examples": ["MAL SISTEMA", "BUEN SISTEMA", "COMENTA", "DEBES HACER"],
-      "recommended": ["Druk Wide Bold", "Anton", "Archivo Black", "Bebas Neue Bold"],
-      "free-alternative": "Archivo Black o Anton",
-      "google-fonts-fallback": "Archivo Black",
-      "weight": 900,
-      "characteristics": "Sans-serif ultra bold, condensed, alto impacto",
-      "default-color": "amarillo-acento (sobre azul) o negro-tinta (sobre papel)",
-      "size-range-pt": [80, 180]
-    },
-    "handwritten-casual": {
-      "role": "Anotaciones, subtítulos, tips, explicaciones",
-      "examples": ["y haz lo siguiente", "TIP", "personalízalo"],
-      "recommended": ["Caveat Bold", "Kalam", "Shadows Into Light"],
-      "free-alternative": "Caveat",
-      "google-fonts-fallback": "Caveat",
-      "weight": 700,
-      "characteristics": "Manuscrita natural, ligeramente irregular",
-      "default-color": "negro-tinta",
-      "size-range-pt": [24, 48]
-    },
-    "body-sans": {
-      "role": "Cuerpo de texto (parrafos, descripciones)",
-      "examples": ["Y así lo puedes usar"],
-      "recommended": ["Inter", "Manrope", "DM Sans"],
-      "free-alternative": "Inter",
-      "google-fonts-fallback": "Inter",
-      "weight": 500,
-      "characteristics": "Sans moderna legible para body",
-      "default-color": "negro-tinta o blanco-roto",
-      "size-range-pt": [28, 36]
-    }
-  },
-  "hierarchy": {
-    "h1-hero-keyword": {
-      "font": "display-graffiti",
-      "size-pt": [180, 240],
-      "color": "amarillo-acento",
-      "line-height": 0.9
-    },
-    "h1-hero-standard": {
-      "font": "sans-bold-condensed",
-      "size-pt": [100, 140],
-      "color": "negro-tinta",
-      "line-height": 0.95
-    },
-    "h2-script-accent": {
-      "font": "serif-italic",
-      "size-pt": [80, 100],
-      "color": "blanco-roto",
-      "line-height": 1.0
-    },
-    "h3-section": {
-      "font": "sans-bold-condensed",
-      "size-pt": [40, 56],
-      "color": "negro-tinta",
-      "line-height": 1.1
+      "usage": "Subtítulos, citas, frases aspiracionales, apoyos de headline",
+      "notes": "Siempre en italic para mantener el caracter elegante de la marca"
     },
     "body": {
-      "font": "body-sans",
-      "size-pt": [28, 36],
-      "color": "negro-tinta",
-      "line-height": 1.3
+      "family": "Avenir",
+      "fallback": "DM Sans",
+      "googleFonts": "https://fonts.google.com/specimen/DM+Sans",
+      "weights": ["400", "500"],
+      "style": "normal",
+      "usage": "Cuerpo de texto, descripciones, listas, labels"
+    }
+  },
+  "scale": {
+    "keyword-xxl": {
+      "size": "80-120px",
+      "font": "display",
+      "weight": "900",
+      "usage": "Palabra clave de portada — 1 a 3 palabras máximo",
+      "lineHeight": "0.9"
     },
-    "annotation": {
-      "font": "handwritten-casual",
-      "size-pt": [32, 40],
-      "color": "negro-tinta",
-      "line-height": 1.2
+    "headline": {
+      "size": "36-48px",
+      "font": "display",
+      "weight": "800",
+      "usage": "Título principal de cada slide",
+      "lineHeight": "1.1"
     },
-    "caption": {
-      "font": "handwritten-casual",
-      "size-pt": [24, 28],
-      "color": "negro-tinta",
-      "line-height": 1.2
+    "subheadline": {
+      "size": "22-28px",
+      "font": "serif",
+      "weight": "400",
+      "style": "italic",
+      "usage": "Frase de apoyo bajo el headline",
+      "lineHeight": "1.3"
+    },
+    "body": {
+      "size": "16-18px",
+      "font": "body",
+      "weight": "400",
+      "usage": "Texto explicativo, descripciones",
+      "lineHeight": "1.6"
+    },
+    "label": {
+      "size": "12-14px",
+      "font": "body",
+      "weight": "500",
+      "transform": "uppercase",
+      "letterSpacing": "0.1em",
+      "usage": "Etiquetas, categorías, numeración de pasos"
     }
   },
   "rules": [
-    "Portadas: minimo 3 fuentes combinadas",
-    "En una misma pieza nunca uses 5 fuentes (queda cargado)",
-    "Palabras clave grandes van en display-graffiti o sans-bold-condensed, nunca en handwritten",
-    "Handwritten es solo para anotaciones/tips, nunca para titulos principales",
-    "Serif italic solo para palabras destacadas, no para parrafos"
+    "Display (Avenir/Nunito) siempre en peso 800 o 900 — nunca ligero",
+    "Lora siempre en italic — es parte del carácter visual de la marca",
+    "Máximo 2 familias tipográficas por slide",
+    "Los textos de CTA van en display bold, nunca en serif",
+    "No usar más de 3 tamaños distintos en un mismo slide"
   ]
 }
