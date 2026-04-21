@@ -1,12 +1,12 @@
-# Pattern 06 — Transición (texto corto sobre color)
+# Pattern 06 — Transición (frase aspiracional sobre color sólido)
 
-Slide de transición entre la parte teórica y la práctica. Casi siempre es solo texto sobre fondo de color.
+Slide de respiro entre la parte informativa y el cierre. Solo texto sobre fondo. Crea momentum emocional.
 
 ## Fórmula
 
 ```
-[Fondo]           Azul primario sólido + textura papel
-[Texto mixto]     Mezcla de sans bold + palabra clave amarilla XXL
+[Fondo]           Café oscuro (#5C3220) sólido
+[Texto mixto]     Avenir Regular blanco + frase clave en Lora Italic crema XXL
 ```
 
 ## Estructura visual
@@ -15,11 +15,12 @@ Slide de transición entre la parte teórica y la práctica. Casi siempre es sol
 ┌─────────────────────────────────┐
 │                                 │
 │                                 │
-│    [CONECTOR]    [VERBO]        │  ← sans bold condensed blanco
-│        [CONECTOR]               │
+│    [Avenir Regular blanco]      │  ← conector o setup, 2-3 palabras
 │                                 │
-│         [KEYWORD]               │  ← sans bold condensed XXL amarillo
+│    [Lora Italic crema XXL]      │  ← frase aspiracional principal
+│    [Lora Italic crema XXL]      │     domina el slide
 │                                 │
+│    [Avenir Regular blanco]      │  ← cierre o remate, opcional
 │                                 │
 │                                 │
 └─────────────────────────────────┘
@@ -28,26 +29,42 @@ Slide de transición entre la parte teórica y la práctica. Casi siempre es sol
 ## Specs
 
 | Elemento | Detalle |
-|----------|---------|
+|---|---|
 | Ratio | 4:5 |
-| Fondo | Azul primario `#9BBDDC` sólido + textura papel |
-| Texto contexto | Sans bold condensed blanco roto 80-100pt, distribuido |
-| Palabra clave | Sans bold condensed **amarillo acento** 240-300pt, centrada |
-| Disposición | Palabras sueltas separadas con aire, no compactas |
+| Fondo | Café `#5C3220` sólido — el único slide con este fondo completo |
+| Texto conector | Avenir Regular blanco `#FFFFFF` 48-64pt |
+| Frase principal | Lora Italic crema `#F5F2EB` 100-160pt, centrada, dominante |
+| Remate | Avenir Regular blanco 36-44pt, opcional |
+| Disposición | Palabras con mucho aire, no compactas |
 
-## Ejemplos estructurales
+## Ejemplos de frases de transición
 
-- **"AHORA VAMOS A DARLE [X]"** ([X] en amarillo XXL)
-- **"DEBES HACER [ESTO]"** ([ESTO] en amarillo XXL)
-- **"COMENTA [KEYWORD]"** ([KEYWORD] en amarillo XXL)
+### Antes del CTA
+* "porque" / **cada sorbo importa**
+* "en The Coffee Cart" / **lo hacemos diferente**
+* "tu evento" / **merece lo mejor**
+
+### Cierre emocional
+* "el café que" / **se recuerda**
+* "no es solo café" / **es experiencia**
+* "el detalle que" / **lo cambia todo**
+
+### Antes de tips
+* "¿sabías que" / **el café habla de ti?**
+* "esto es lo que" / **nadie te dice**
 
 ## Claves
 
-- **Casi zero elementos** — solo texto sobre fondo
-- **Mucho aire** alrededor del texto
-- **Palabra clave domina** visualmente (80% del tamaño)
-- **Textura de papel** siempre presente (no fondo plano)
+* **Casi cero elementos** — solo texto sobre fondo café
+* **Mucho aire** alrededor del texto — el espacio es parte del diseño
+* **Lora Italic domina** — es el momento más elegante del carrusel
+* **No usar patrón de fondo** en este slide — fondo sólido limpio
+* **Nunca más de 6 palabras** en la frase principal
 
-## Prompt para IA
+## Prompt para Claude / IA
 
-> Slide 4:5. Fondo azul primario #9BBDDC sólido con textura sutil de papel arrugado superpuesta. Texto principal dispuesto en varias líneas: primero palabras en blanco roto en sans bold condensed 100pt, luego la palabra clave central en amarillo mostaza #E8C547 sans bold condensed ULTRA gigante (250pt o más), dominando el slide. Mucho aire alrededor del texto, composición minimalista. Sin imágenes ni screenshots.
+> Slide 4:5. Fondo café oscuro #5C3220 sólido, limpio, sin texturas. Composición solo de texto centrado con mucho espacio en blanco. Primero 2-3 palabras en Avenir Regular blanco 56pt. Luego la frase principal en Lora Italic crema #F5F2EB ultra grande 140pt en 1-2 líneas, dominando el slide. Opcionalmente, una línea de remate en Avenir Regular blanco 40pt al pie. Minimalismo absoluto, elegancia máxima.
+
+---
+
+*The Coffee Cart · Brand System 2026*
