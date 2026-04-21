@@ -1,73 +1,100 @@
-# Pattern 04 — Comparativa "MAL SISTEMA vs BUEN SISTEMA"
+# Pattern 04 — Comparativa "SIN THE COFFEE CART vs CON THE COFFEE CART"
 
-Slide de contraste. Muestra el problema y la solución. Patrón muy efectivo para didactizar.
+Slide de contraste. Muestra el problema y la solución. Muy efectivo para generar deseo.
 
 ## Fórmula
 
 ```
-[Fondo]          Beige papel + textura
-[Bloque 1]       "MAL SISTEMA" + cruz + ejemplo malo
-[Bloque 2]       "BUEN SISTEMA" + check + lista de elementos buenos
+[Fondo]          Crema (#F5F2EB)
+[Bloque 1]       "SIN THE COFFEE CART" + ✗ + descripción del problema
+[Bloque 2]       "CON THE COFFEE CART" + ✓ + lista de beneficios
 ```
 
 ## Estructura visual
 
 ```
 ┌─────────────────────────────────┐
-│ MAL SISTEMA                     │  ← sans bold condensed negro
-│ ✗ [frase del problema]          │  ← cruz a mano + texto
+│ SIN THE COFFEE CART             │  ← Avenir Black negro, 52pt
+│ ✗ [descripción del problema]    │  ← ✗ en latte + Avenir Regular
 │   ┌────────────────┐            │
-│   │ screenshot mal │ ← washi    │
+│   │ foto sin café  │            │  ← foto genérica, blanco y negro
+│   │  de calidad    │            │
 │   └────────────────┘            │
-│                                 │
-│ BUEN SISTEMA                    │  ← sans bold condensed negro
-│ ✓ [frase solución]              │  ← check a mano + texto
-│   ↓                             │
-│     • [punto 1]                 │  ← lista con bullets azules
-│     • [punto 2]                 │
-│     • [punto 3]                 │
-│     • [punto 4]                 │
-│     • [punto 5]                 │
+│ ─────────────────────           │  ← separador fino negro tinta
+│ CON THE COFFEE CART             │  ← Avenir Black negro, 52pt
+│ ✓ [descripción de la solución]  │  ← ✓ en café + Avenir Regular
+│     • [beneficio 1]             │  ← bullets con círculo café
+│     • [beneficio 2]             │
+│     • [beneficio 3]             │
+│     • [beneficio 4]             │
 └─────────────────────────────────┘
 ```
 
 ## Specs
 
 | Elemento | Detalle |
-|----------|---------|
+|---|---|
 | Ratio | 4:5 |
-| Fondo | Beige papel `#F5F0E8` + textura |
-| Headers "MAL/BUEN SISTEMA" | Sans bold condensed 60-72pt negro |
-| Cruz ✗ | PNG sticker manuscrito azul primario |
-| Check ✓ | PNG sticker manuscrito azul primario |
-| Frase problema | Handwritten 36pt negro |
-| Bullets | Sans bold condensed 36-44pt negro, con círculos azules |
-| Separación bloques | 80-120px vertical |
+| Fondo | Crema `#F5F2EB` |
+| Headers "SIN/CON" | Avenir Black 52-64pt, negro tinta `#0D0D0D` |
+| Cruz ✗ | Color latte `#9E7B65` — el problema no merece el café principal |
+| Check ✓ | Color café `#5C3220` — la solución en el color principal |
+| Descripción problema | Avenir Regular 26pt, negro tinta |
+| Bullets | Avenir Black 32-40pt negro, círculo café `#5C3220` al inicio |
+| Separador | Línea 1px negro tinta, margen completo |
 
-## Claves del estilo
-
-- **Cruz y check a mano** (no Unicode), azul primario
-- **Bullets circulares azul primario** (no rayas ni guiones)
-- **Handwritten** para las frases explicativas del problema
-- **Sans bold condensed** para los items de la lista (más formal y legible)
-
-## Ejemplo estructural
+## Ejemplo de contenido real
 
 ```
-MAL SISTEMA
-✗ [descripción del antipatrón en 1-2 líneas]
-  [screenshot de un ejemplo mal hecho]
+SIN THE COFFEE CART
+✗ Café de máquina que sabe a plástico.
+  Invitados que no vuelven a la mesa.
+  [foto de máquina de café genérica, en blanco y negro]
 
-BUEN SISTEMA
-✓ [descripción del patrón correcto en 1-2 líneas]
+─────────────────────────────────
+
+CON THE COFFEE CART
+✓ Café de especialidad que se recuerda.
   ↓
-    • [característica 1]
-    • [característica 2]
-    • [característica 3]
-    • [característica 4]
-    • [característica 5]
+    • Barista certificado en tu evento
+    • Granos de origen seleccionados
+    • Menú diseñado para tus invitados
+    • Setup elegante que complementa tu evento
+    • Cero estrés para el organizador
 ```
 
-## Prompt para IA
+## Otros ejemplos de comparativa
 
-> Slide 4:5. Fondo beige papel #F5F0E8 con textura arrugada. Divide el slide en dos bloques verticales. Bloque superior "MAL SISTEMA" en sans bold condensed negro grande, con una cruz dibujada a mano en azul #9BBDDC al lado, y una frase manuscrita estilo Caveat describiendo el problema. Debajo, un screenshot con washi tape mostrando un ejemplo del problema. Bloque inferior "BUEN SISTEMA" en sans bold condensed negro, check dibujado a mano azul, frase manuscrita de solución, y una lista de 5 bullets circulares azul primario con texto sans bold condensed negro 40pt.
+**Comparativa de experiencia:**
+```
+SIN TCC: Café servido en termo. Frío. Sin opciones.
+CON TCC: Espresso, latte, cold brew. Caliente o frío. Personalizado.
+```
+
+**Comparativa de setup:**
+```
+SIN TCC: Mesa con termo y vasos de plástico.
+CON TCC: Barra profesional montada, loza de calidad, barista uniformado.
+```
+
+**Comparativa de impacto:**
+```
+SIN TCC: Los invitados lo olvidan al día siguiente.
+CON TCC: "¿De dónde era el café?" — la pregunta que siempre se repite.
+```
+
+## Reglas
+
+1. **SIN siempre arriba** — el problema primero crea tensión
+2. **Cruz en latte, no en rojo** — la marca no usa rojo, mantener paleta
+3. **Check en café** — el color principal para lo positivo
+4. **Foto del "SIN" en blanco y negro** — contraste visual inmediato
+5. **Máximo 5 bullets en el "CON"** — si son más, edita
+
+## Prompt para Claude / IA
+
+> Slide 4:5. Fondo crema #F5F2EB. Dividido en dos bloques verticales. Bloque superior: "SIN THE COFFEE CART" en Avenir Black negro tinta 56pt, una cruz en latte #9E7B65 y descripción del problema en Avenir Regular 26pt. Foto pequeña en blanco y negro de café genérico. Separador línea fina. Bloque inferior: "CON THE COFFEE CART" en Avenir Black negro tinta 56pt, check en café #5C3220 y lista de 4-5 bullets con círculo café al inicio en Avenir Black 36pt negro. Estilo limpio, elegante, mucho espacio entre bloques.
+
+---
+
+*The Coffee Cart · Brand System 2026*
