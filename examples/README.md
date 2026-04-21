@@ -1,45 +1,75 @@
-# Ejemplos aplicados
+# Ejemplos aplicados · The Coffee Cart
 
-Ejemplos HTML/CSS del brand system en acción. Ábrelos en el navegador para ver cómo se aplica el sistema.
+Ejemplos HTML/CSS del brand system en acción. Ábrelos directamente en el navegador para
+ver cómo se aplica el sistema de marca con tus colores y tipografías reales.
 
 ## Archivos
 
-- **`hero-cover.html`** — Portada tipo "conector + KEYWORD + subtítulo" (pattern 01)
-- **`cta-keyword.html`** — Slide final "COMENTA [KEYWORD]" (pattern 07)
+* **`hero-cover.html`** — Portada tipo "apoyo Lora + KEYWORD + subtítulo" (pattern 01)
+* **`cta-keyword.html`** — Slide final de cotización con Lora Italic (pattern 07)
 
 ## Cómo abrirlos
 
+Arrastra cualquiera de los archivos `.html` al navegador, o desde terminal:
+
 ```bash
-# Desde la raíz del repo:
+# Mac
 open examples/hero-cover.html
 open examples/cta-keyword.html
-```
 
-O arrastra el archivo al navegador.
+# Windows
+start examples/hero-cover.html
+start examples/cta-keyword.html
+```
 
 ## Qué demuestran
 
-- Uso de `tokens/fonts.css` con variables CSS
-- Google Fonts (Archivo Black, Playfair Display Italic, Caveat) — 100% free
-- Aspect ratio 4:5 correcto (1080 × 1350)
-- Layering: placeholder de talento delante del texto
-- Paleta completa aplicada
+* Uso de la paleta completa de The Coffee Cart (café, crema, latte, tinta)
+* Tipografías: Nunito 900 como sustituto de Avenir Black + Lora Italic — cargadas desde Google Fonts
+* Aspect ratio 4:5 correcto (en producción = 1080 × 1350px)
+* Patrón C de marca como textura de fondo en el slide CTA (opacidad 6%)
+* Variables CSS listas para copiar a otros slides
 
-## Fuentes premium (opcional)
-
-Si compras Bourton + Druk Wide, en `tokens/fonts.css`:
+## Variables CSS del sistema
 
 ```css
---font-display-graffiti: 'Bourton', sans-serif;
---font-sans-condensed: 'Druk Wide', sans-serif;
+:root {
+  /* Colores */
+  --color-cafe:   #5C3220;   /* principal */
+  --color-crema:  #F5F2EB;   /* fondo alternativo */
+  --color-latte:  #9E7B65;   /* acento cálido */
+  --color-tinta:  #0D0D0D;   /* textos y fondos oscuros */
+  --color-blanco: #FFFFFF;   /* blanco puro */
+
+  /* Tipografías */
+  --font-display: 'Avenir', 'Nunito', sans-serif;
+  --font-serif:   'Lora', Georgia, serif;
+  --font-body:    'Avenir', 'DM Sans', sans-serif;
+}
 ```
 
-Y añades los `@font-face` con los archivos reales en `fonts/`.
+## Fuentes premium (Avenir real)
+
+Si tienes Adobe Creative Cloud, activa Avenir desde Adobe Fonts. Para usarla en HTML:
+
+```css
+/* Reemplazar en el @import de cada HTML */
+@import url('https://use.typekit.net/[tu-kit-id].css');
+
+:root {
+  --font-display: 'avenir', sans-serif;
+  --font-body:    'avenir', sans-serif;
+}
+```
 
 ## Próximos ejemplos por hacer
 
-- [ ] `numbered-step.html` (pattern 03)
-- [ ] `comparison-bad-good.html` (pattern 04)
-- [ ] `tip-highlight.html` (pattern 05)
-- [ ] `transition.html` (pattern 06)
-- [ ] `enter-platform.html` (pattern 02)
+* `context.html` — Slide de contexto/problema (pattern 02)
+* `numbered-point.html` — Punto numerado (pattern 03)
+* `comparison.html` — Sin TCC vs Con TCC (pattern 04)
+* `tip-highlight.html` — Tip destacado (pattern 05)
+* `transition.html` — Frase aspiracional (pattern 06)
+
+---
+
+*The Coffee Cart · Brand System 2026*
