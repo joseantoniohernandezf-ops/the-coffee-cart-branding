@@ -1,15 +1,15 @@
-# Pattern 03 — Paso numerado (PASO 1, PASO 2, PASO 3, PASO 4)
+# Pattern 03 — Punto numerado (PUNTO 1, PUNTO 2, PUNTO 3...)
 
 Los slides centrales del carrusel. Se repiten con la misma estructura cambiando número y contenido.
 
 ## Fórmula
 
 ```
-[Fondo]            Beige papel (#F5F0E8) + textura arrugada
-[Número]           "PASO 1" en graffiti azul gigante arriba-izquierda
-[Título]           Frase acción en sans bold condensed negro
-[Visual]           Screenshot / mockup de lo que hay que hacer (con washi tape)
-[Anotaciones]      Handwritten + flechas explicando detalles
+[Fondo]            Crema (#F5F2EB) o Blanco (#FFFFFF)
+[Número]           "01" o "PUNTO 1" en Avenir Black gigante, color latte o café
+[Título]           Beneficio o elemento del servicio en Avenir Black negro
+[Visual]           Foto del momento o elemento descrito
+[Apoyo]            Lora Italic con frase complementaria
 ```
 
 ## Estructura visual
@@ -17,18 +17,18 @@ Los slides centrales del carrusel. Se repiten con la misma estructura cambiando 
 ```
 ┌─────────────────────────────────┐
 │                                 │
-│  [PASO 1] ← graffiti azul XXL   │
+│  [01] ← Avenir Black latte XXL  │  ← número grande arriba-izquierda
 │                                 │
-│  [TÍTULO EN SANS BOLD NEGRO]    │  ← acción concreta del paso
-│  [subtítulo casual entre parén] │  ← "(al final te digo cómo...)"
+│  [TÍTULO DEL PUNTO EN NEGRO]    │  ← beneficio o elemento, 2-3 palabras
+│  [Lora Italic de apoyo]         │  ← frase que amplía el título
 │                                 │
 │    ┌──────────────────────┐     │
 │    │                      │     │
-│    │   SCREENSHOT / UI    │  ← washi tape
+│    │   FOTO / VISUAL      │     │  ← imagen del momento descrito
 │    │                      │     │
 │    └──────────────────────┘     │
-│        ↓  ↓  ↓                  │  ← flechas manuscritas
-│   [anotación] [anotación]       │  ← handwritten explicando campos
+│                                 │
+│   [Avenir Regular descripción]  │  ← 1-2 líneas explicando el punto
 │                                 │
 └─────────────────────────────────┘
 ```
@@ -36,30 +36,45 @@ Los slides centrales del carrusel. Se repiten con la misma estructura cambiando 
 ## Specs
 
 | Elemento | Detalle |
-|----------|---------|
+|---|---|
 | Ratio | 4:5 |
-| Fondo | Beige papel `#F5F0E8` + textura |
-| "PASO N" | Display graffiti **azul primario** `#9BBDDC`, 140-180pt, con efecto drip al pie |
-| Título de paso | Sans bold condensed negro, 44-56pt, mayúsculas |
-| Subtítulo casual | Handwritten casual 28-32pt negro entre paréntesis |
-| Screenshot/UI | Centrado, 70-80% ancho, sombra sutil, washi tapes |
-| Flechas | Manuscritas negras apuntando a elementos |
-| Anotaciones | Handwritten 32-40pt negro |
+| Fondo | Crema `#F5F2EB` o Blanco `#FFFFFF` |
+| Número "01" | Avenir Black / Nunito 900, 120-160pt, latte `#9E7B65` |
+| Título del punto | Avenir Black, 44-56pt, negro tinta `#0D0D0D`, mayúsculas |
+| Lora Italic | 26-32pt, café `#5C3220` |
+| Foto | 65-75% ancho, centrada |
+| Descripción | Avenir Regular 20-24pt, negro tinta |
 
-## Claves del estilo
+## Ejemplos por tipo de carrusel
 
-1. **Número grande** siempre en graffiti azul con drip
-2. **Ajustar a mano la interfaz** con flechas curvas y círculos
-3. **Texto explicativo en handwritten** (no en sans limpia)
-4. **Washi tapes en las esquinas** del screenshot
+### Carrusel de servicio — ¿Qué incluye The Coffee Cart?
+* **PUNTO 01** — BARISTA CERTIFICADO / *"que conoce cada bebida"*
+* **PUNTO 02** — EQUIPO PROFESIONAL / *"llevamos todo, tú no cargas nada"*
+* **PUNTO 03** — CAFÉ DE ORIGEN / *"granos seleccionados, no mezclas genéricas"*
+* **PUNTO 04** — MENÚ PERSONALIZADO / *"diseñamos el menú para tu evento"*
 
-## Variantes típicas
+### Carrusel de tips — Café de especialidad 101
+* **PUNTO 01** — EL ORIGEN IMPORTA / *"no todo el café sabe igual"*
+* **PUNTO 02** — LA EXTRACCIÓN / *"espresso, pour over, cold brew — cada uno cuenta"*
+* **PUNTO 03** — LA TEMPERATURA / *"el café malo siempre está quemado"*
 
-- **PASO 1**: setup / "RELLENA TU INFO" / "PREPARA X"
-- **PASO 2**: research / "ANALIZA LO QUE FUNCIONA"
-- **PASO 3**: acción / "CREA" / "GENERA"
-- **PASO 4**: finalización / "EDITA / PUBLICA"
+### Carrusel de evento — Cómo funciona contratarnos
+* **PASO 01** — NOS CONTACTAS / *"cuéntanos de tu evento"*
+* **PASO 02** — DISEÑAMOS TU MENÚ / *"adaptado a tus invitados"*
+* **PASO 03** — LLEGAMOS Y MONTAMOS / *"nosotros nos encargamos de todo"*
 
-## Prompt para IA
+## Reglas
 
-> Slide 4:5. Fondo beige papel #F5F0E8 con textura arrugada. Arriba-izquierda la etiqueta "PASO 1" en tipografía graffiti stencil XXL color azul #9BBDDC con efecto drip/pintura goteando debajo. Justo debajo, el título de la acción en sans bold condensed mayúsculas negro 50pt. Si hay subtítulo, en handwritten Caveat entre paréntesis. En el centro del slide, un screenshot limpio de la interfaz con 2-3 washi tapes beige en las esquinas y rotación sutil. A la derecha o debajo del screenshot, flechas curvas dibujadas a mano que apuntan a elementos concretos del screenshot, con anotaciones handwritten explicando qué es cada campo.
+1. **Número siempre en latte `#9E7B65`** — nunca en negro, se confunde con el título
+2. **Título siempre en mayúsculas** y Avenir Black
+3. **Lora Italic siempre en minúsculas** y color café
+4. **Foto coherente con el punto** — si el punto es "barista", foto de barista
+5. **Máximo 2 líneas de descripción** — si necesitas más, divide en dos slides
+
+## Prompt para Claude / IA
+
+> Slide 4:5. Fondo crema #F5F2EB. Arriba-izquierda el número "01" en Avenir Black / Nunito 900 latte #9E7B65 ultra grande 140pt. Justo debajo, el título del punto en Avenir Black mayúsculas negro tinta 50pt en 1-2 líneas. Debajo del título, una frase corta en Lora Italic café #5C3220 30pt. En el centro, una foto limpia del elemento descrito ocupando 70% del ancho. Al pie, 1-2 líneas de descripción en Avenir Regular negro tinta 22pt. Estilo elegante, limpio, mucho espacio en blanco.
+
+---
+
+*The Coffee Cart · Brand System 2026*
