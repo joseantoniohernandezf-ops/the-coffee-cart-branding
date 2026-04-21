@@ -43,32 +43,64 @@ assets/
 
 ---
 
-## Logos — prioridad inmediata
+## Logos — archivos disponibles
 
-Estos son los archivos más importantes. Si solo tienes el PDF del brand book,
-exporta desde ahí las versiones que necesitas:
+> 📁 **Google Drive — Logos:**
+> [Ver carpeta de logos](https://drive.google.com/drive/folders/1fHcwmsU2AiVv0FbrLZ7a-rH6e4kT9brY)
+>
+> Los logos **no se suben a este repo** — se mantienen en Drive y se referencian desde aquí.
+> Para usar en Canva: descarga directamente desde el link de Drive.
 
-| Versión | Cuándo usar |
-|---|---|
-| `logo-negro.svg` | Sobre fondo crema `#F5F2EB` o blanco |
-| `logo-blanco.svg` | Sobre fondo café `#5C3220` o negro tinta `#0D0D0D` |
-| `logo-crema.svg` | Versión cálida para slides oscuros |
-| `logo-isotipo.svg` | Stories, avatares, sellos pequeños |
+### Archivos actuales en Drive
 
-> Tu brand book ya tiene las variaciones. Expórtalas desde el PDF o pídele al diseñador
-> los archivos SVG originales.
+| Archivo | Modo | Transparencia | Uso |
+|---|---|---|---|
+| `logo con fondo.png` | RGBA | ✅ Sí | Logo con fondo transparente, versión principal |
+
+### Versiones que hacen falta
+
+| Versión | Cuándo usar | Cómo obtenerla |
+|---|---|---|
+| `logo-negro.png` | Sobre fondo crema `#F5F2EB` o blanco | Exportar desde Illustrator con fondo transparente |
+| `logo-blanco.png` | Sobre fondo café `#5C3220` o tinta `#0D0D0D` | Cambiar color a blanco en Illustrator y exportar |
+| `logo-isotipo.png` | Stories, avatares, sellos pequeños | Recortar solo el símbolo y exportar |
+
+> Pendiente: exportar versión blanca del logo para usarla en slides oscuros (CTA, transición).
+> Con Canva puedes cambiar el color del logo a blanco si lo importas como PNG transparente.
 
 ---
 
-## Fotografías — guía de tomas
+## Fotografías — banco de imágenes
 
-Para que tus fotos sean coherentes con la marca desde el principio:
+> 📁 **Google Drive — Fotos profesionales:**
+> [Ver carpeta completa](https://drive.google.com/drive/folders/1D0D-W4UO9lbH_bXfCcv-FpXJaPV9qZe1)
+>
+> Las fotos **no se suben a este repo** — son archivos de 8–20MB y GitHub no está
+> pensado para eso. Se mantienen en Drive y se referencian desde aquí.
+> Para usar con IA: comparte el link de la subcarpeta al pedir un carrusel.
 
-### Prioridad alta (conseguir lo antes posible)
-- **Close-up de latte art** — fondo neutro, luz natural lateral
-- **Barista de perfil preparando espresso** — profundidad de campo
-- **La barra completa en un evento** — toma lateral, setup completo
-- **Manos recibiendo una taza** — POV del invitado
+### Subcarpetas en Drive
+
+| Carpeta | Contenido | Link |
+|---|---|---|
+| `bebidas/` | Close-ups de bebidas siendo preparadas | — |
+| `barista/` | El equipo trabajando, mandiles, máquina | — |
+| `setup/` | La barra completa montada en eventos | — |
+| `eventos/` | Ambiente, invitados, venue | — |
+
+> Actualiza los links de cada subcarpeta conforme las vayas creando en Drive.
+
+### Fotos destacadas ya catalogadas
+
+| Archivo | Descripción | Mejor uso |
+|---|---|---|
+| ASG01472 | Matcha siendo vertido en vaso con logo, luz exterior cálida | Portada de carrusel / hook |
+| ASG01525 | Iced latte siendo vertido, vaso con logo, fondo desenfocado | Portada o tip de bebida |
+| ASG01719 | POV mano sosteniendo iced latte, lente esférico creativo | Hook aspiracional |
+| ASG01425 | 3 baristas con mandil sonriendo en el evento | Slide de equipo / servicio |
+| ASG01557 | Baristas trabajando en la máquina espresso | Slide de proceso |
+
+### Guía de tomas (para próximas sesiones)
 
 ### Ajustes de edición coherentes con la marca
 ```
@@ -78,6 +110,8 @@ Highlights:    -10 (sin quemar blancos)
 Shadows:       +5 (mantener detalle en oscuros)
 Saturación:    +5 a +10 — nunca exagerada
 ```
+
+Para próximas sesiones, priorizar: close-up de latte art, barista de perfil preparando espresso, la barra completa montada, y manos recibiendo una taza.
 
 ### Filtros de Lightroom recomendados
 Cualquier preset de tonos cálidos y terrosos. Evitar filtros fríos, azulados o con
